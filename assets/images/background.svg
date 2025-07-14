@@ -1,0 +1,114 @@
+<svg viewBox="0 0 400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient de fond principal -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f9f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2e0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradients pour les feuilles -->
+    <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#388E3C;stop-opacity:0.5" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <!-- Filtre pour effet de flou -->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Fond principal -->
+  <rect width="400" height="800" fill="url(#mainGradient)"/>
+  
+  <!-- Motifs géométriques subtils -->
+  <circle cx="50" cy="100" r="80" fill="#ffffff" opacity="0.1"/>
+  <circle cx="350" cy="200" r="60" fill="#ffffff" opacity="0.08"/>
+  <circle cx="100" cy="600" r="100" fill="#ffffff" opacity="0.06"/>
+  <circle cx="300" cy="700" r="70" fill="#ffffff" opacity="0.09"/>
+  
+  <!-- Feuilles décoratives grandes -->
+  <path d="M -20 150 Q 20 100 80 130 Q 120 160 90 200 Q 50 220 -20 150" 
+        fill="url(#leafGradient1)" transform="rotate(15 30 175)"/>
+  
+  <path d="M 320 80 Q 360 30 420 60 Q 460 90 430 130 Q 390 150 320 80" 
+        fill="url(#leafGradient2)" transform="rotate(-20 370 105)"/>
+  
+  <path d="M 350 500 Q 390 450 450 480 Q 490 510 460 550 Q 420 570 350 500" 
+        fill="url(#leafGradient1)" transform="rotate(45 400 525)"/>
+  
+  <path d="M -30 650 Q 10 600 70 630 Q 110 660 80 700 Q 40 720 -30 650" 
+        fill="url(#leafGradient3)" transform="rotate(-30 20 675)"/>
+  
+  <!-- Feuilles plus petites pour la profondeur -->
+  <path d="M 150 200 Q 170 180 190 200 Q 210 220 190 240 Q 170 250 150 200" 
+        fill="url(#leafGradient2)" opacity="0.6"/>
+  
+  <path d="M 250 350 Q 270 330 290 350 Q 310 370 290 390 Q 270 400 250 350" 
+        fill="url(#leafGradient3)" opacity="0.5"/>
+  
+  <path d="M 80 450 Q 100 430 120 450 Q 140 470 120 490 Q 100 500 80 450" 
+        fill="url(#leafGradient1)" opacity="0.7"/>
+  
+  <path d="M 300 250 Q 320 230 340 250 Q 360 270 340 290 Q 320 300 300 250" 
+        fill="url(#leafGradient2)" opacity="0.4"/>
+  
+  <!-- Éléments botaniques stylisés -->
+  <g opacity="0.3">
+    <!-- Tiges -->
+    <line x1="200" y1="300" x2="200" y2="400" stroke="#4CAF50" stroke-width="3"/>
+    <line x1="150" y1="350" x2="150" y2="420" stroke="#66BB6A" stroke-width="2"/>
+    <line x1="250" y1="320" x2="250" y2="380" stroke="#81C784" stroke-width="2"/>
+    
+    <!-- Petites feuilles sur les tiges -->
+    <ellipse cx="190" cy="320" rx="8" ry="15" fill="#4CAF50" transform="rotate(-30 190 320)"/>
+    <ellipse cx="210" cy="340" rx="6" ry="12" fill="#66BB6A" transform="rotate(30 210 340)"/>
+    <ellipse cx="140" cy="370" rx="7" ry="14" fill="#81C784" transform="rotate(-45 140 370)"/>
+  </g>
+  
+  <!-- Particules flottantes -->
+  <circle cx="100" cy="250" r="3" fill="#4CAF50" opacity="0.6"/>
+  <circle cx="300" cy="180" r="2" fill="#66BB6A" opacity="0.5"/>
+  <circle cx="180" cy="500" r="4" fill="#81C784" opacity="0.4"/>
+  <circle cx="320" cy="400" r="2" fill="#2E7D32" opacity="0.6"/>
+  <circle cx="80" cy="300" r="3" fill="#43A047" opacity="0.5"/>
+  
+  <!-- Zone claire pour le contenu central -->
+  <ellipse cx="200" cy="400" rx="120" ry="80" fill="#ffffff" opacity="0.7" filter="url(#blur)"/>
+  
+  <!-- Motifs de points subtils -->
+  <g opacity="0.15">
+    <circle cx="50" cy="50" r="1" fill="#4CAF50"/>
+    <circle cx="350" cy="70" r="1" fill="#66BB6A"/>
+    <circle cx="30" cy="300" r="1" fill="#81C784"/>
+    <circle cx="370" cy="350" r="1" fill="#2E7D32"/>
+    <circle cx="100" cy="750" r="1" fill="#43A047"/>
+    <circle cx="300" cy="750" r="1" fill="#4CAF50"/>
+    <circle cx="200" cy="150" r="1" fill="#66BB6A"/>
+    <circle cx="150" cy="550" r="1" fill="#81C784"/>
+  </g>
+  
+  <!-- Titre de l'application -->
+  <text x="200" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2E7D32">
+    PlantDetector
+  </text>
+  
+  <!-- Phrase introductive -->
+  <text x="30" y="720" font-family="Arial, sans-serif" font-size="16" fill="#388E3C" opacity="0.9">
+    Identifiez vos plantes en un clic
+  </text>
+  <text x="30" y="745" font-family="Arial, sans-serif" font-size="14" fill="#43A047" opacity="0.8">
+    Découvrez la nature qui vous entoure
+  </text>
+</svg>
