@@ -1,16 +1,41 @@
-# plant_detector
+# 🌱 Plant Detector
 
-A new Flutter project.
+A mobile application that uses **Artificial Intelligence** to identify plants from images.
 
-## Getting Started
+## 🛠️ Technologies
 
-This project is a starting point for a Flutter application.
+* Flutter
+* Dart
+* TensorFlow Lite
+* AI / Machine Learning
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* 📷 Capture or select a plant image
+* 🤖 AI-based plant identification
+* 🌱 Display the detected plant
+* 📱 Mobile application
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Melizara/plant_detector.git
+```
+
+2. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+3. Run the application:
+
+```bash
+flutter run
+```
+
+## 👨‍💻 Author
+
+**Melizara**
