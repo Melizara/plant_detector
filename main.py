@@ -4,7 +4,7 @@ from fastapi import FastAPI, File, UploadFile
 import numpy as np
 import tensorflow as tf
 
-app = FastAPI(title="Plant Disease Detection API")
+app = FastAPI(title="Plant Detection API")
 
 MODEL_PATH = "assets/plant_disease_model.tflite"
 LABELS_PATH = "assets/plant_labels.txt"
